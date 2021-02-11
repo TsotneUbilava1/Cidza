@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/map"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#1E1E1E"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="21dp"
+                android:layout_height="12dp"
+                android:background="@mipmap/menubtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ციძები თქვენთან ახლოს"
+                android:textColor="#FFD180"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ილია ჭავჭავაძის გამზირი"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="14sp"
+                android:layout_height="12dp"
+                android:background="@mipmap/xuioznaet" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cidziko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="100dp"
+            android:src="@mipmap/cidzaavatar" />
+
+        <ImageView
+            android:id="@+id/mimartuleba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/orientation"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/locat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="85dp"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/location" />
+
+        <ImageView
+            android:id="@+id/prof1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/sizarmace"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/sizarmacei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/fusizarmace"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/shekveta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/prof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginRight="120dp"
+            android:background="#00FFFFFF" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
